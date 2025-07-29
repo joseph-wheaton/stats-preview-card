@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.google.com/specimen/Inter');
+}
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('https://fonts.google.com/specimen/Lexend+Deca');
+}
+body {
+  box-sizing: border-box;
+  background-color: hsl(233, 47%, 7%);
+}
+h1 {
+  font-size: 28px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
+  background-color: hsl(244, 37%, 16%);
+  border-radius: 10px;
+  height: 100%;
+}
+.card {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: left;
+  padding: 40px;
+  width: 50%;
+}
+.card-header {
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', Arial, sans-serif;
+}
+.insights {
+  color: hsl(277, 64%, 61%);
+  font-family: 'Lexend Deca', Arial, sans-serif;
+}
+.card-body p {
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-family: 'Lexend Deca', Arial, sans-serif;
+}
+.hero { 
+  border-radius: 0 10px 10px 0;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  object-fit: cover;
+}
+@media screen and (max-width: 420px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .card {
+    width: 85%;
+    padding: 40px;
+  }
+  .hero {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+}
